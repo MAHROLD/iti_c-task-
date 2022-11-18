@@ -1,6 +1,371 @@
 #include<stdio.h>
+#define SWAP(x,y)(x^=y^= x ^= y)
+#define IS_UPPER(x) (x >= 'A' && x <= 'Z')
+#define IS_LOWER(x) (x >= 'a' && x <= 'z')
+#define MAX(x, y) (x > y ? x : y)
+#define MIN(x, y) (x < y ? x : y)
+#define IS_ODD(x) (x & 1)
+#define SQUARE(x) (x * x)
+#define CUBE(x) (x * x * x)
+#define SUM(x, y) (x + y)
+#define PI 3.14
+#ifndef ARITH_H
+#define ARITH_H
+float sum (float, float);
+float sub (float, float);
+float div (float, float);
+float div (float, float);
+float mult (float, float);
+int mod (int, int);
 
+#endif
+#define EVEN_ODD(num)               \
+    if (num & 1)                    \
+        printf("%d is odd\n", num); \
+    else                            \
+        printf("%d is even\n", num);
+#define MAX_SIZE 100 
+#define ROW 3
+#define COL 3
+#define MAX_SIZE 100 
+#define SIZE 3
+int compare(char * str1, char * str2);
+int * getNEvenNumbers(const int N, int * numbers);
 int main(){
+	
+	// int A[SIZE][SIZE]; 
+    // int num, row, col;
+    // printf("Enter elements in matrix of size %dx%d: \n", SIZE, SIZE);
+    // for(row=0; row<SIZE; row++)
+    // {
+        // for(col=0; col<SIZE; col++)
+        // {
+            // scanf("%d", &A[row][col]);
+        // }
+    // }
+    // printf("Enter any number to multiply with matrix A: ");
+    // scanf("%d", &num);
+    // for(row=0; row<SIZE; row++)
+    // {
+        // for(col=0; col<SIZE; col++)
+        // {
+            // A[row][col] = num * A[row][col];
+        // }
+    // }
+    // printf("\nResultant matrix c.A = \n");
+    // for(row=0; row<SIZE; row++)
+    // {
+        // for(col=0; col<SIZE; col++)
+        // {
+            // printf("%d ", A[row][col]);
+        // }
+        // printf("\n");
+    // }
+
+
+
+
+
+ // int A[SIZE][SIZE];  
+ // int B[SIZE][SIZE];
+ // int C[SIZE][SIZE];
+ // int row,col;	
+ // for(row=0; row<SIZE; row++)
+    // {
+        // for(col=0; col<SIZE; col++)
+        // {
+            // scanf("%d", &A[row][col]);
+        // }
+    // }
+
+    // printf("\nEnter elements in matrix B of size 3x3: \n");
+    // for(row=0; row<SIZE; row++)
+    // {
+        // for(col=0; col<SIZE; col++)
+        // {
+            // scanf("%d", &B[row][col]);
+        // }
+    // }
+    // for(row=0; row<SIZE; row++)
+    // {
+        // for(col=0; col<SIZE; col++)
+        // {
+            // C[row][col] = A[row][col] - B[row][col];
+        // }
+    // }
+    // printf("\ndiff of two matrics \n");
+    // for(row=0; row<SIZE; row++)
+    // {
+        // for(col=0; col<SIZE; col++)
+        // {
+            // printf("%d ", C[row][col]);
+        // }
+        // printf("\n");
+    // }
+	
+	
+	
+	
+	// int A[3][3];
+    // int B[3][3];
+    // int C[3][3];
+	// int row, col;
+	 // printf("enter elements in matrix: \n");
+    // for(row=0; row<SIZE; row++)
+    // {
+        // for(col=0; col<SIZE; col++)
+        // {
+            // scanf("%d",&A[row][col]);
+        // }
+    // }
+    // printf("\nenter elements in matrix B of size 3x3: \n");
+    // for(row=0; row<SIZE; row++)
+    // {
+        // for(col=0; col<SIZE; col++)
+        // {
+            // scanf("%d", &B[row][col]);
+        // }
+    // }
+    // for(row=0; row<SIZE; row++)
+    // {
+        // for(col=0; col<SIZE; col++)
+        // {
+            // C[row][col] = A[row][col] + B[row][col];
+        // }
+    // }
+    // printf("\nsum of matrices A+B = \n");
+    // for(row=0; row<SIZE; row++)
+    // {
+        // for(col=0; col<SIZE; col++)
+        // {
+            // printf("%d ", C[row][col]);
+        // }
+        // printf("\n");
+    // } 
+	 
+	 
+	// int evenNumbers[SIZE];
+    // int i;
+    // getNEvenNumbers(SIZE, evenNumbers);
+    // printf("even numbers are: \n", SIZE);
+    // for (i = 0; i < SIZE; i++)
+    // {
+        // printf("%d ",*(evenNumbers + i));
+    // }
+	
+	
+	
+	
+	//C program to find reverse of a string
+    // char str[MAX_SIZE], reverse[MAX_SIZE];
+    // int i, strIndex, revIndex, len;
+	// printf("enter string: ");
+    // gets(str);
+    // i = 0;
+    // while(str[i] != '\0') i++;
+    // len = i;
+    // revIndex = 0;
+    // strIndex = len - 1;
+    // while(strIndex >= 0)
+    // {
+        // reverse[revIndex] = str[strIndex];
+        // strIndex--;
+        // revIndex++;
+    // }
+    // reverse[revIndex] = '\0';
+    // printf("\ninput string = %s\n", str);
+    // printf("reverse string = %s", reverse);
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	//C program to compare two strings
+    // char str1[MAX_SIZE], str2[MAX_SIZE];
+    // int res;
+    // printf("enter first string: ");
+    // gets(str1);
+    // printf("enter second string: ");
+    // gets(str2);
+    // res = compare(str1, str2);
+    // if(res == 0)
+    // {
+        // printf("both are equal");
+    // }
+    // else if(res < 0)
+    // {
+        // printf("first string is smaller");
+    // }
+    // else
+    // {
+        // printf("First string is greater than second.");
+    // }
+	
+	
+	
+	
+	
+//C program to concatenate two strings	
+// char str1[MAX_SIZE], str2[MAX_SIZE];
+    // int i, j;
+    // printf("Enter first string: ");
+    // gets(str1);
+    // printf("Enter second string: ");
+    // gets(str2);
+    // i=-1;
+    // while(str1[++i]);
+    // j = 0;
+    // while(str1[i++] = str2[j++]);
+    // printf("Concatenated string = %s", str1);
+	
+	
+	
+	
+//C program to find length of a string
+ // char text[MAX_SIZE];
+    // int i;
+    // int count= 0;
+    // printf("enter string: ");
+    // gets(text);
+    // for(i=0; text[i]!='\0'; i++)
+    // {
+        // count++;
+    // }
+    // printf("length of '%s' = %d", text, count);
+	
+	
+	
+	
+	
+	
+	
+  // char text[MAX_SIZE];
+    // int i;
+    // int count= 0;
+    // printf("Enter any string: ");
+    // gets(text);
+    // for(i=0; text[i]!='\0'; i++)
+    // {
+        // count++;
+    // }
+    // printf("Length of '%s' = %d", text, count);	
+	
+	
+	
+	
+	
+//C program to find length of a string	
+	
+	
+	
+	
+	
+//How to write multiline macro in C language?	
+	// int num;
+	// printf("enter nu: ");
+    // scanf("%d", &num);
+    // EVEN_ODD(num);
+
+
+
+
+
+// C program to create and include custom header file
+
+    // printf("sum(10, 20)  = %.2f\n", sum(10, 20));
+    // printf("sub(10, 20)  = %.2f\n", sub(10, 20));
+    // printf("mult(10, 20) = %.2f\n", mult(10, 20));
+    // printf("div(10, 20)  = %.2f\n", div(10, 20));
+    // printf("mod(10, 20)  = %d\n",   mod(10, 20));
+
+
+
+//C program to define, undefine and redefine a macro – #define, #undef
+ // printf("Value of PI: %f\n", PI);
+
+    // #ifdef PI
+    // #undef PI
+    // #endif
+
+    // #define PI 3.14159
+
+    // printf("PI: %f", PI);
+
+
+
+
+//C program to find sum of two numbers using macro
+    // int num1,num2;
+	// printf("enter any two numbers: ");
+    // scanf("%d%d",&num1,&num2);
+	// printf("Sum= %d\n",SUM(num1, num2));
+
+
+
+
+//C program to find square and cube of a number using macro – #define SQUARE(x), #define CUBE(x)
+    // int num;
+    // printf("enter any num: ");
+    // scanf("%d",&num);
+    // printf("square(%d) = %d\n", num, SQUARE(num));
+    // printf("cube(%d) = %d\n", num, CUBE(num));
+
+
+
+
+
+
+//C program to check even or odd using macro
+// int num;
+    // printf("enter any num\n");
+    // scanf("%d", &num);
+
+    // if (IS_ODD(num))
+        // printf("%d is odd\n", num);
+    // else
+        // printf("%d is even\n", num);
+
+
+
+
+
+//C program to find maximum or minimum using macro
+
+// int num1=1,num2=5;
+
+// printf("the maximum = %d",MAX(num1,num2));
+// printf("the min = %d",MIN(num1,num2));
+
+
+
+
+
+//C program to check lowercase or uppercase using macro
+// char ch;
+// ch = getchar();
+
+    // if (IS_UPPER(ch))
+        // printf("'%c' uppercase\n", ch);
+    // else if (IS_LOWER(ch))
+        // printf("'%c' lower \n", ch);
+    // else 
+        // printf("the input is not alphapet\n");
+
+
+
+//C program to swap two numbers using macro
+
+
+// int num1=5, num2=6;
+// SWAP(num1, num2);
+// printf("values after swapping\n");
+// printf("num1 = %d, num2 = %d",num1,num2);
+
 
 
 
@@ -797,4 +1162,54 @@ int main(){
 // }
 
 return 0; 
+}
+
+float sum (float x, float y)
+{
+    return (x + y);
+}
+
+float sub (float x, float y)
+{
+    return (x - y);
+}
+
+float div (float x, float y)
+{
+    return (x == 0 || y == 0) 
+            ? 0
+            : (x / y);
+}
+
+float mult (float x, float y)
+{
+    return (x * y);
+}
+
+int mod (int x, int y)
+{
+    return (x % y);
+}
+int compare(char * str1, char * str2)
+{
+    int i = 0;
+    while(str1[i] == str2[i])
+    {
+        if(str1[i] == '\0' && str2[i] == '\0')
+            break;
+        i++;
+    }
+    return str1[i] - str2[i];
+}
+int * getNEvenNumbers(const int N, int * numbers)
+{
+    int i;
+
+    for (i = 0; i < N; i++)
+    {
+        // Calculate and store even number in numbers
+        *(numbers + i) = 2 * (i + 1);
+    }
+
+    return numbers;
 }
